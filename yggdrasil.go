@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-const authServer = "https://authserver.mojang.com"
+var authServer = "https://authserver.mojang.com"
 
 // Client holds an access token and a client token.
 // After a successful authentication, it will also hold the currently selected profile and the current user.
