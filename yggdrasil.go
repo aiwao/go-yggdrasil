@@ -297,7 +297,7 @@ func postJSONRequest(endpoint string, v interface{}) (*http.Response, error) {
 	if err != nil {
 		return nil, err
 	}
-	request, err := http.NewRequest("POST", authServer+endpoint, bytes.NewBuffer(body))
+	request, err := http.NewRequest("POST", AuthServer+endpoint, bytes.NewBuffer(body))
 	if err != nil {
 		return nil, err
 	}
